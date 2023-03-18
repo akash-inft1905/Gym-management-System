@@ -1,0 +1,41 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM - Fitness</title>
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/9f/3b/2b/9f3b2b4c4b8d647ff220251252ab2acc.png">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{ % static 'js/script.js' %}"></script>
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<nav>
+      <div class="nav-container">
+         <img src="{% static 'images/logo.jpg' %}" alt="logo" class="logo">
+           <div class="btn">
+                 <div class="line1"></div>
+                 <div class="line2"></div>
+                 <div class="line3"></div>
+           </div>
+      </div>
+         <!--For links-->
+         <ul class="nav-links" style=" background-color: #1eb99c; padding: 2em 2em; list-style-type: none;
+         display: none;">
+             <li><a href="#home">Home</a></li>&nbsp&nbsp&nbsp&nbsp
+             <li><a href="#about">About</a></li>&nbsp&nbsp&nbsp&nbsp
+             <li><a href="#workout">The Gym</a></li>&nbsp&nbsp&nbsp&nbsp
+             <li><a href="#testimonial">Feedback</a></li>&nbsp&nbsp&nbsp&nbsp
+             <li><a href="{% url 'contact' %}">Contact</a></li>&nbsp&nbsp&nbsp&nbsp
+             <li><a href="{% url 'admin_login' %}">Admin Login</a></li>
+         </ul>
+         <!---End of links-->
+     </nav>
+    <!---Jquery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!---Script js-->
+     <script src="{ % static 'js/script.js' %}"></script>
+</body>
+</html>
